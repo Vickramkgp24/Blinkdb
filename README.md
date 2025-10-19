@@ -65,10 +65,10 @@ Open a new terminal and run:
 
 You can now enter commands such as:
 
-SET key value
-GET key
-DEL key
-COMPACT
+SET key value<br>
+GET key<br>
+DEL key<br>
+COMPACT<br>
 EXIT
 
 The client will communicate with the server using the RESP protocol.
@@ -80,10 +80,10 @@ If you compiled the REPL version, you can test the engine directly:
 
 Available commands:
 
-set key value
-get key
-del key
-compact
+set key value<br>
+get key<br>
+del key<br>
+compact<br>
 exit
 
 ## 🧩 Supported Commands
