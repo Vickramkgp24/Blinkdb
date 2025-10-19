@@ -65,11 +65,11 @@ Open a new terminal and run:
 
 You can now enter commands such as:
 
-SET key value<br>
-GET key<br>
-DEL key<br>
-COMPACT<br>
-EXIT
+SET/set key value<br>
+GET/get key<br>
+DEL/del key<br>
+COMPACT/compact<br>
+EXIT/exit
 
 The client will communicate with the server using the RESP protocol.
 
@@ -80,11 +80,11 @@ If you compiled the REPL version, you can test the engine directly:
 
 Available commands:
 
-set key value<br>
-get key<br>
-del key<br>
-compact<br>
-exit
+SET/set key value<br>
+GET/get key<br>
+DEL/del key<br>
+COMPACT/compact<br>
+EXIT/exit
 
 ## 🧩 Supported Commands
 
