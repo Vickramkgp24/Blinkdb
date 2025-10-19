@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "../part-a/LSMStorageEngine.hpp"
+#include "../Server/LSMStorageEngine.hpp"
 
 /**
     @class CommandHandler
@@ -29,13 +29,13 @@ public:
         if (command.empty()) return "-Error: Empty command\r\n";
         
         std::string operation = command[0];
-        if (operation == "SET" && command.size() == 3) {
+        if ((operation == "SET" || operation == "set") && command.size() == 3) {
             storageEngine.set(command[1], command[2]);
             return "OK";
-        } else if (operation == "GET" && command.size() == 2) {
+        } else if ((operation == "GET" || operation == "get") && command.size() == 2) {
             std::string value = storageEngine.get(command[1]);
             return value.empty() ? "" : value;
-        } else if (operation == "DEL" && command.size() == 2) {
+        } else if ((operation == "DEL" || operation == "del") && command.size() == 2) {
             storageEngine.del(command[1]);
             return "OK";
         } else {
